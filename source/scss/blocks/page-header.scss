@@ -242,7 +242,7 @@
     color: inherit;
     padding: 0 0.5em 0.5em;
     transition-property: color;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
 
     &::after {
       content: "";
@@ -254,7 +254,7 @@
       right: 0;
 
       transition-property: width,  background-color;
-      transition-duration: 0.3s, 0.3s;
+      transition-duration: $animation-slow, $animation-slow;
 
 
       @media (max-width: $tablet) and (orientation: portrait) {
