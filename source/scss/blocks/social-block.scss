@@ -95,6 +95,10 @@
   opacity: 0;
   pointer-events: none;
 
+  transition-property: opacity;
+  transition-duration: $animation-slow;
+
+
   @media (min-width: $stop-scaling) {
     margin-top: 15px;
   }
@@ -145,6 +149,27 @@
   .social-block--active & {
     opacity: 1;
     pointer-events: auto;
+
+    .social-block__link {
+      transition-property: opacity, top ;
+      transition-duration: $animation-slow, $animation-slow;
+
+      &--fb{
+        transition-delay: 50ms;
+        opacity: 1;
+        top: 0;
+      }
+      &--insta{
+        transition-delay: 200ms;
+        opacity: 1;
+        top: 0;
+      }
+      &--vk{
+        transition-delay: 350ms;
+        opacity: 1;
+        top: 0;
+      }
+    }
   }
 
   li {
@@ -212,6 +237,9 @@
   }
 
   &--fb {
+    opacity: 0;
+    top: 20px;
+    
     svg {
       width: 0.8rem;
       height: 1.7rem;
@@ -224,6 +252,9 @@
   }
 
   &--insta {
+    opacity: 0;
+    top: 20px;
+    
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -236,6 +267,9 @@
   }
 
   &--vk {
+    opacity: 0;
+    top: 20px;
+    
     svg {
       width: 1.7rem;
       height: 1rem;
