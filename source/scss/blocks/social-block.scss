@@ -146,6 +146,7 @@
     pointer-events: auto;
   }
 
+  .social-block:focus-within &, 
   .social-block--active & {
     opacity: 1;
     pointer-events: auto;
@@ -153,6 +154,7 @@
     .social-block__link {
       transition-property: opacity, top ;
       transition-duration: $animation-slow, $animation-slow;
+      transition-delay: 50ms;
 
       &--fb{
         transition-delay: 50ms;
