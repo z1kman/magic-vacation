@@ -74,7 +74,7 @@
   }
 
   &:active,
-  &:active:focus {
+  &:focus-within {
     color: $c-light;
 
     &::before {
@@ -152,9 +152,10 @@
     pointer-events: auto;
 
     .social-block__link {
-      transition-property: opacity, top ;
-      transition-duration: $animation-slow, $animation-slow;
+      transition-property: opacity, top, color ;
+      transition-duration: $animation-slow, $animation-slow, $animation-fast;;
       transition-delay: 50ms;
+      
 
       &--fb{
         transition-delay: 50ms;
