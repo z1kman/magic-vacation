@@ -196,11 +196,10 @@
 }
 
 .form__field {
-  // transition-property: right;
-  // transition-duration: $animation-very-slow;
+  transition-property: right;
+  transition-duration: $animation-very-slow;
 
   transition: $animation-very-slow;
   position: relative;
-  // flex-grow: 0;
-  right: -200px;
+  right: -100%;
 }
