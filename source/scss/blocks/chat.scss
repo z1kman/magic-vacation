@@ -183,6 +183,24 @@
   }
 }
 
+
+
 .chat__footer {
   margin-top: auto;
+}
+
+.active {
+  .form__field {
+    right: 0px;
+  }
+}
+
+.form__field {
+  // transition-property: right;
+  // transition-duration: $animation-very-slow;
+
+  transition: $animation-very-slow;
+  position: relative;
+  // flex-grow: 0;
+  right: -200px;
 }
