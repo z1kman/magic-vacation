@@ -186,20 +186,30 @@
 
 
 .chat__footer {
-  margin-top: auto;
-}
-
-.active {
-  .form__field {
-    right: 0px;
+  form {
+    margin-top: auto;
+    display: flex;
+    justify-content: end;
   }
 }
 
-.form__field {
-  transition-property: right;
-  transition-duration: $animation-very-slow;
+.form__button{
+    width: 21rem;
+}
 
+// .active {
+//   .form__field {
+//     width: 0px;
+//   }
+// }
+
+.form__field {
+  display: block;
+  transition-property: width;
+  transition-duration: $animation-very-slow;
   transition: $animation-very-slow;
-  position: relative;
-  right: -100%;
+  input {
+    width: 0px;
+  }
+ 
 }
